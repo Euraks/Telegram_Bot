@@ -16,7 +16,6 @@ public class PeopleService {
         return restClient.getPeopleByPageNumber( pageNumber );
     }
 
-
     public People getPeopleForId(String peopleId) {
         return restClient.getPeopleById( peopleId );
     }

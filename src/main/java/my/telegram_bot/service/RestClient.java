@@ -18,6 +18,7 @@ public class RestClient {
     public List<People> getPeopleByPageNumber(int pageNumber) {
         String url = "https://reqres.in/api/users?page=";
         Page page = restTemplate.getForObject( url + pageNumber, Page.class );
+        assert page != null;
         return page.getData();
     }
 
